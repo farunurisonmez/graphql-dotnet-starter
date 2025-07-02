@@ -7,4 +7,8 @@
     <RootNamespace>graphql_dotnet_starter</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="HotChocolate.AspNetCore" Version="15.1.7" />
+  </ItemGroup>
+
 </Project>
