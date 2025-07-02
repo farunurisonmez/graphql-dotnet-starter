@@ -4,7 +4,7 @@
     {
         public static void ConfigureServices(this WebApplicationBuilder builder)
         {
-            builder.Services.AddGraphQLServer();
+            builder.Services.AddGraphQLServer().AddQueryType<Query>();
         }
     }
 }
