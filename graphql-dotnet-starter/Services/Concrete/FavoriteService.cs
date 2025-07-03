@@ -6,6 +6,7 @@ namespace graphql_dotnet_starter.Services.Concrete
     {
         public Task<List<string>> GetFavoriteProductIdsAsync(string userId)
         {
+            Console.WriteLine($"[DEBUG] FavoriteService called for userId: {userId}");
             var favorites = new Dictionary<string, List<string>>
             {
                 ["user-123"] = new() { "1", "3" },
